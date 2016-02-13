@@ -41,11 +41,7 @@ namespace KtoOsel.Logic
             return _canExecute == null ? true : _canExecute(parameter);
         }
 
-        public event EventHandler CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
+		public event EventHandler CanExecuteChanged;
 
         public void Execute(object parameter)
         {

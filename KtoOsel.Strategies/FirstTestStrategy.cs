@@ -7,7 +7,9 @@ namespace KtoOsel.Strategies
 {
     public class FirstTestStrategy : IStrategy
     {
-        private readonly FirstSTrategyStatusControl _control = new FirstSTrategyStatusControl();
+        //private readonly FirstSTrategyStatusControl _control = new FirstSTrategyStatusControl();
+
+		private string _currentStatus;
 
         public FirstTestStrategy(string name)
         {
@@ -22,7 +24,7 @@ namespace KtoOsel.Strategies
             var curTurn = game.CurrentTurn;
             var myCards = game.ThisStrategyCards.ToList();
 
-            _control.CurrentCardsTb.Text = String.Join(",", myCards);
+			_currentStatus = String.Join(",", myCards);
 
             myCards.Sort();
 
@@ -102,6 +104,6 @@ namespace KtoOsel.Strategies
             };
         }
 
-        public object Control { get { return _control; } }
+		public object Control { get { return _currentStatus; } }
     }
 }

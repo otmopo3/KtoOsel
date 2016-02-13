@@ -9,7 +9,7 @@ using KtoOsel.Strategies;
 
 namespace KtoOsel
 {
-    class GameLogicVm : INotifyPropertyChanged
+    public class GameLogicVm : INotifyPropertyChanged
     {
         private GameLogic _gameLogic;
 

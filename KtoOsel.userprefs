@@ -1,0 +1,6 @@
+﻿<Properties StartupItem="KtoOsel.Console/KtoOsel.Console.csproj">
+  <DisabledProjects>
+    <String>KtoOsel.Vm/KtoOsel.Vm.csproj</String>
+    <String>KtoOsel/KtoOsel.csproj</String>
+  </DisabledProjects>
+</Properties>
